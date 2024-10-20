@@ -1,14 +1,9 @@
 from __future__ import print_function
 from scipy.interpolate import interp1d
 import scipy
-import matplotlib.pyplot as plt
-plt.rcParams["font.family"] = "serif"
-plt.rcParams["mathtext.fontset"] = "cm"
 from orphics import maps,io,cosmology,catalogs,stats # msyriac/orphics ; pip install -e . --user
 from pixell import enmap,reproject,curvedsky,enplot,utils
 import numpy as np
-import os
-import healpy as hp
 import tqdm
 
 class settingsClass(object):
